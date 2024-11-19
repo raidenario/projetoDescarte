@@ -12,7 +12,7 @@ const locaisRouter = require('./routes/LocaisDescarte');
 app.use('/api', locaisRouter)
 
 const sequelize = require('./database');
-const LocaisDescarte = require('./models/LocaisDescarte');
+const LocaisDescarte = require('./models/locaisDescarte');
 
 sequelize.sync({alter : true})
     .then(() => console.log('Modelos sincronizados com o banco de dados'))
