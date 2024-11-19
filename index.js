@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 const { Sequelize } = require('sequelize');
 
-const locaisRouter = require('./routes/LocaisDescarte');
+const locaisRouter = require('./routes/locaisDescarte');
 app.use('/api', locaisRouter)
 
 const sequelize = require('./database');
